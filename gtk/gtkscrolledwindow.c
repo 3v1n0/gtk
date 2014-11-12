@@ -1822,7 +1822,7 @@ gtk_scrolled_window_draw_overshoot (GtkScrolledWindow *scrolled_window,
   gtk_style_context_restore (context);
 }
 
-#define UNDERSHOOT_SIZE 20
+#define UNDERSHOOT_SIZE 40
 #define GTK_STYLE_CLASS_UNDERSHOOT "undershoot"
 
 static void
