@@ -145,21 +145,25 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 .undershoot {
   &.top {
-    background: linear-gradient(to top, transparentize(red,1), transparentize(red,0.5));
-    background-size: auto 100px;
-    background-position: center 100%;
+    background-image: linear-gradient(to bottom, transparentize(black, 0.75) 1px,
+                                                 transparentize(black, 0.9) 2px,
+                                                 transparent 7px);
+    background-size: 100%;
+    background-position: top;
   } 
   &.bottom {
-    background: linear-gradient(to bottom, transparentize(red,1), transparentize(red,0.5));
-    background-size: auto 100px;
-    background-position: center 0%;
+    background-image: linear-gradient(to top, $base_color 10%, transparentize($base_color, 1));
+    background-size: 100%;
+    background-position: bottom;
   } 
   &.left {
+    /* FIXME: styleme! */
     background: linear-gradient(to left, transparentize(red,1), transparentize(red,0.5));
     background-size: 100px auto;
     background-position: 100% center;
   } 
   &.right {
+    /* FIXME: styleme! */
     background: linear-gradient(to right, transparentize(red,1), transparentize(red,0.5));
     background-size: 100px auto;
     background-position: 0% center;
